@@ -1,5 +1,6 @@
-This math model aims to represent one ground avian influenza transmission between birds and how the climate can affect the tranmission between HPAI and LPAI.
+This mathematical model characterizes the transmission dynamics of avian influenza virus among 
+ground-dwelling avian species. The model incorporates the dichotomy of high and low pathogenic variants(HPAI and LPAI) in the dwelling ground. 
 
-The compartmental analysis can be described in the figure below(Crude figure... better verison coming soon).
+One critical assumption of this model is the potential for cross-strain infection, in which individuals in the recovering phase of infection remain susceptible to the heterologous strain. 
 
-![Screenshot 2024-12-12 100243](https://github.com/user-attachments/assets/a847f324-b95d-44fb-b965-575b144512e7)
+**This is an individual research project under the SDSU DiMo Lab** 
