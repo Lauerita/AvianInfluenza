@@ -13,12 +13,12 @@ def Temp(t, T0, epsilon, om, fi):
         Frequency.
     fi : scalar
         phase shift.
-    epsilon : sclalr
+    epsilon : scalar
         Amplitude.
 
     Returns
     -------
-    T : Instantaenous temperature value of temperature function T(t)
+    T : Instantaneous temperature value of temperature function T(t)
     '''
     T = T0 + epsilon*np.sin(om*t + fi)
     
@@ -37,9 +37,9 @@ def Viral(a, b, Temp):
 
     Returns
     -------
-    Viral: Scalalr or array
+    Viral: Scalar or array
         Returned viral decay time at Temp. Depends on the input type 
-        for parameter Temp, return value could be instantaneous decay rate 
+        for parameter Temp, the return value could be the instantaneous decay rate 
         or a function over time. 
 
     '''  
@@ -105,8 +105,6 @@ def R0(t, a, b, T0, epsilon, fi, om, beta_d = 2.3e-9, beta_i = 3.55e-9, p1 = 1e3
 
     R0 = 0.5 * (term1 + np.sqrt(np.maximum(disc, 0)))  
     
-    
-    print(A, B, R0)
     import matplotlib.pyplot as plt 
     
     plt.figure( figsize = (10, 8))
@@ -120,3 +118,4 @@ def R0(t, a, b, T0, epsilon, fi, om, beta_d = 2.3e-9, beta_i = 3.55e-9, p1 = 1e3
     plt.show()
     
     return R0
+
