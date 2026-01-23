@@ -10,7 +10,9 @@ A mathematical model(ODE system) is used to describe the transmission dynamics o
 To generate the transmission dynamics, the module named `AIVDynamics.py` can be downloaded into your directory to solve for the intended system. The module includes functions: **Temp**, **Viral**, **Avian**, and **DynamicsSolver**. To generate the solutions and dynamics plot, users only need to call the **DynamicsSolver** function along with their initial conditions and required parameters for high pathogenic virus. It is recommended that users review the docstrings of each function carefully.
 
 
+## $R_0$ Calculator
 
+The calculation for the time-invariant basic reproduction number is shown in the manuscript; one can simply compute $R_0$ by using the formula and desired parameters in the manuscript. However, a module for such calculation is provided in this repository under the file name `R0_calc.py`. Note that this file also plots the basic reproduction number as a function of temperature for $R_0^{LPAI}$, $R_0^{HPAI}$, as well as $R_0^{model}$. 
 
 
 
