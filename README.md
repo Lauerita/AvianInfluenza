@@ -7,7 +7,7 @@ A mathematical model(ODE system) is used to describe the transmission dynamics o
 
 ## Avian Influenza Dynamics Solver 
 
-To generate the transmission dynamics, the module named `AIVmodules.py` can be downloaded into your directory to solve for the intended system. The module includes functions: **Temp**, **Viral**, **Avian**, and **DynamicsSolver**. To generate the solutions and dynamics plot, users only need to call the **DynamicsSolver** function along with their initial conditions and required parameters for high pathogenic virus. It is recommended that users review the docstrings of each function carefully.
+To generate the transmission dynamics, the module named `AIVDynamics.py` can be downloaded into your directory to solve for the intended system. The module includes functions: **Temp**, **Viral**, **Avian**, and **DynamicsSolver**. To generate the solutions and dynamics plot, users only need to call the **DynamicsSolver** function along with their initial conditions and required parameters for high pathogenic virus. It is recommended that users review the docstrings of each function carefully.
 
 
 
