@@ -13,12 +13,12 @@ def Temp(t, T0, epsilon, om, fi):
         Frequency.
     fi : scalar
         phase shift.
-    epsilon : sclalr
+    epsilon : scalar
         Amplitude.
 
     Returns
     -------
-    T : Instantaenous temperature value of temperature function T(t)
+    T : Instantaneous temperature value of temperature function T(t)
     '''
     T = T0 + epsilon*np.sin(om*t + fi)
     
@@ -39,9 +39,9 @@ def Viral(a, b, Temp):
 
     Returns
     -------
-    Viral: Scalalr or array
+    Viral: Scalar or array
         Returned viral decay time at Temp. Depends on the input type 
-        for parameter Temp, return value could be instantaneous decay rate 
+        for parameter Temp, the return value could be the instantaneous decay rate 
         or a function over time. 
 
     '''  
@@ -80,7 +80,7 @@ def Avian(X, t, a, b, T0, epsilon, om, fi, beta_d = 2.13e-9, beta_i = 3.55e-9,
     lambd : scalar
         Natural birth rate. The default is 2.
     eta : scalar
-        Immunity wanning rate. The default is 0.038.
+        Immunity waning rate. The default is 0.038.
     alpha1 : scalar
         Mutation rate for LPAI. The default is 0.065.
     alpha2 : scalar
@@ -88,7 +88,7 @@ def Avian(X, t, a, b, T0, epsilon, om, fi, beta_d = 2.13e-9, beta_i = 3.55e-9,
 
     Returns
     -------
-    Array dynamcis
+    Array dynamics
     '''
     current_temp = Temp(t, T0, epsilon, om, fi)
     S, I1, I2, R1, R2, I12, I21, R12, V1, V2 = X
@@ -213,3 +213,4 @@ def DynamicsSolver(X0, t, a, b, T0, epsilon, om, fi, **kwargs):
     plt.legend()
     plt.tight_layout()
     plt.show()
+
